@@ -1,0 +1,118 @@
+body{
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+}
+header{
+    background-color: #ffe4c4;
+    color: rgb(255, 255, 255);
+    height: 15em;
+    z-index: 0;
+}
+.Hud {
+    border-radius: 30%;
+    font-style: italic;
+    text-align: center;
+}
+.Hud a {
+    display: inline-block;
+    flex-direction: column;
+    font-size: 4em;
+    margin: 0.1em;
+    text-align: center;
+    text-decoration: none;
+    color: #ffe4c4;
+    border-radius: 30%;
+    border: 0.07em solid #000000; /* Combinação simplificada para as propriedades de borda */
+    background-color: #000000;
+    padding: 0.2em;
+}
+
+.sHeader{
+    margin: 0.3em;
+    border: 0.3em solid rgb(255, 218, 218);
+    background-image: url("https://istoedinheiro.com.br/wp-content/uploads/sites/17/2021/05/livro.jpg?x46096");
+    background-position:center ;
+    z-index: 0;
+    height: 15em;
+}
+.sHeaderDiv{
+    background-color: #00000085;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    font-size: 2.3em;
+    text-align: center;
+    padding: 1px;
+}
+
+
+
+
+main{
+    background-color: #000000;
+    color: #ffe4c4;
+    font-size: 1.7em;
+    padding: 3%;
+    z-index: 0;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    height: 15em;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+#openBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffe4c4;
+    color: #000000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+/* Estilo da tela de navegação */
+#navScreen {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    text-align: center; /* Alinha o texto ao centro */
+    white-space: nowrap;
+}
+
+/* Estilo dos botões de navegação */
+.navButton {
+    background-color: #000000;
+    color: #ffe4c4;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: auto;
+    width: auto;
+    font-size: 3em;
+}

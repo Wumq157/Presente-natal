@@ -1,0 +1,63 @@
+body{
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+}
+header{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    height: 15em;
+    z-index: 0;
+}
+.Hud {
+    border-radius: 30%;
+    font-style: italic;
+    text-align: center;
+}
+.Hud a {
+    display: inline-block;
+    flex-direction: column;
+    font-size: 4em;
+    margin: 0.1em;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 30%;
+    border: 0.07em solid #000000; /* Combinação simplificada para as propriedades de borda */
+    background-color: #ffe4c4;
+    padding: 0.2em;
+}
+
+.sHeader{
+    margin: 0.3em;
+    border: 0.3em solid rgb(255, 218, 218);
+    background-image: url("https://img.freepik.com/fotos-premium/rosas-amarelas-na-chuva_625492-7963.jpg?w=740");
+    background-position:center ;
+    z-index: 0;
+    height: 15em;
+}
+.sHeaderDiv{
+    background-color: #00000085;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    font-size: 2.3em;
+    text-align: center;
+    padding: 1px;
+}
+
+
+
+
+main{
+    background-color: bisque;
+    height: 75em;
+    z-index: 0;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    height: 15em;
+    z-index: 0;
+}

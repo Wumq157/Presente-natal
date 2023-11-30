@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação por Divs</title>
+    <style>
+        /* Estilo dos botões de navegação */
+        .navButton {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <main id="texto">
+        <div id="Primeiro Encontro">Conteúdo do Primeiro Encontro</div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="Um lindo passeio">Conteúdo do Um lindo passeio</div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <!-- Outras divs infinitas apenas mudando o id -->
+    </main>
+
+    <!-- Botões de navegação serão adicionados aqui -->
+
+    <script>
+        // Função para criar botões de navegação
+        function criarBotoesDeNavegacao() {
+            var mainElement = document.getElementById('texto');
+            var divs = mainElement.getElementsByTagName('div');
+
+            for (var i = 0; i < divs.length; i++) {
+                var divId = divs[i].id;
+                var button = document.createElement('button');
+                button.className = 'navButton';
+                button.textContent = divId;
+                button.addEventListener('click', function () {
+                    var targetElement = document.getElementById(this.textContent);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+
+                document.body.appendChild(button);
+            }
+        }
+
+        // Chama a função quando a página carrega
+        window.onload = criarBotoesDeNavegacao;
+    </script>
+</body>
+
+</html>
