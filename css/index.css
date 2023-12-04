@@ -51,8 +51,11 @@ header{
 
 
 main{
+    padding: 3%;
+    text-align: center;
+    font-size: 2em;
+    color: #000;
     background-color: bisque;
-    height: 75em;
     z-index: 0;
 }
 

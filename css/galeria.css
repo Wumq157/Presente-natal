@@ -1,0 +1,82 @@
+body{
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+}
+header{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    height: 15em;
+    z-index: 0;
+}
+.Hud {
+    border-radius: 30%;
+    font-style: italic;
+    text-align: center;
+}
+.Hud a {
+    display: inline-block;
+    flex-direction: column;
+    font-size: 4em;
+    margin: 0.1em;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 30%;
+    border: 0.07em solid #000000; /* Combinação simplificada para as propriedades de borda */
+    background-color: #ffe4c4;
+    padding: 0.2em;
+}
+
+.sHeader{
+    margin: 0.3em;
+    border: 0.3em solid rgb(255, 218, 218);
+    background-image: url("../galeria/WhatsApp Image 2023-12-01 at 19.59.39.jpeg");
+    background-position:center ;
+    z-index: 0;
+    height: 15em;
+}
+.sHeaderDiv{
+    background-color: #00000085;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    font-size: 2.3em;
+    text-align: center;
+    padding: 1px;
+}
+
+
+
+
+main{
+    padding: 3%;
+    text-align: center;
+    font-size: 2em;
+    color: #000;
+    background-color: bisque;
+    z-index: 0;
+}
+/* Estilo para todas as imagens e vídeos */
+div img,
+div video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; /* Adicione borda arredondada se desejar */
+}
+
+/* Estilo específico para vídeos para garantir que a proporção seja mantida */
+div video {
+    aspect-ratio: 871/1600;
+    width: 100%;
+}
+
+
+footer{
+    background-color: rgb(0, 0, 0);
+    height: 15em;
+    z-index: 0;
+}
